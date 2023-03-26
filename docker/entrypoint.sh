@@ -22,9 +22,9 @@ run() {
 
   /app/gen-domains-txt.sh
 
-  /app/dehydrated --register --accept-terms $CA_HOST
+  dehydrated --register --accept-terms $CA_HOST
 
-  cmd='/app/dehydrated -c -t dns-01 -k /app/hook.sh '$CA_HOST
+  cmd='dehydrated -c -t dns-01 -k /app/hook.sh '$CA_HOST
   echo ""
   echo $cmd
   echo ""

@@ -11,5 +11,7 @@ RUN apk update && apk add bash bc \
   && rm /usr/local/bin/install-packages;
 
 COPY ./docker/entrypoint.sh /entrypoint.sh
+COPY ./dehydrated-app /app
+COPY ./dehydrated-src /usr/local/bin
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["server"]
