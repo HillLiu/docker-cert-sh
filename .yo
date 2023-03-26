@@ -1,0 +1,5 @@
+repositoryName=docker-cert-sh
+repositoryOrgName=HillLiu
+dockerImageName=cert-sh
+dockerOrgName=allfunc
+terratest=allfunc/terratest
